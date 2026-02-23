@@ -37,13 +37,12 @@ direction TB
 	<<abstract>> Vehiculo
 	<<interface>> Especialista
 
-    Cliente "1" <|--* "*" Vehiculo
-    Reparacion --* Vehiculo
-    Especialista --|> Mecanico
-    Taller ..|> Mecanico
-    Mecanico "1" -- "*" Reparacion
+    Cliente "1" *-- "1..*" Vehiculo
+    Reparacion *-- Vehiculo
+    Especialista ..|> Mecanico
+    Mecanico --> Reparacion
     Vehiculo --|> Coche
     Vehiculo --|> Moto
-
+    Taller ..> Reparacion
 
 ```
