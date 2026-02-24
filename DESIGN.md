@@ -34,6 +34,10 @@ direction TB
 	    +reparar() void
     }
 
+    class Factura{
+        
+    }
+
 	<<abstract>> Vehiculo
 	<<interface>> Especialista
 
@@ -44,5 +48,7 @@ direction TB
     Vehiculo --|> Coche
     Vehiculo --|> Moto
     Taller ..> Reparacion
+    Factura "1" *-- "1..*" Reparacion
+
 
 ```
