@@ -38,8 +38,6 @@ direction TB
         
     }
 
-	<!-- Esta clase Factura es la que, al introducirla en el código, gracias a Mermaid se genera y se incorpora al diagrama UML-->
-
 	<<abstract>> Vehiculo
 	<<interface>> Especialista
 
